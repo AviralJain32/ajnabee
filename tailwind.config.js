@@ -19,6 +19,8 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        romaticaStory:['Romantica', "sans-serif"]
+
       },
     },
     screens: {
@@ -33,4 +35,5 @@ export default {
   plugins: [
     require('tailwind-scrollbar-hide')
   ],
+
 }

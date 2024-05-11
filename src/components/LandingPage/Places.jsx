@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion} from 'framer-motion';
 const Places = () => {
   const places = [
     { name: 'Connaught Place', count: 17 },
@@ -17,10 +17,10 @@ const Places = () => {
         </h2>
       <div className="flex flex-wrap justify-around mb-2 text-center">
         {places.map((place) => (
-          <div key={place.name} className="w-full md:w-1/3  md:mb-0 rounded-xl hover:scale-110 hover:cursor-pointer shadow-gold bg-white px-4 py-2  border border-gray-300" >
+          <motion.div whileHover={{scale:1.1}} key={place.name} className="w-full md:w-1/3  md:mb-0 rounded-xl hover:scale-110 hover:cursor-pointer shadow-gold bg-white px-4 py-2  border border-gray-300" >
             <h3 className="text-xl font-bold mb-1">{place.name}</h3>
             <p className="text-gray-600 mb-3">{place.count} places</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
