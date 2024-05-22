@@ -48,12 +48,6 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            {/* sticky button */}
-            <motion.div whileHover={{scale:1.2}} className=" fixed bottom-5 right-5 z-50">
-            <button type="button" className=" text-black shadow-lg bg-yellow-400 hover:bg-yellow-500 font-medium rounded-lg text-lg py-3 px-4 me-2 mb-2">
-            Join the Waitlist
-          </button>
-            </motion.div>
             {/* search box on landing page */}
             <div className="flex justify-center items-center mt-4">
                 <div className="border border-black rounded-xl p-4  flex justify-between w-2/5 max-sm:w-4/5">
@@ -80,27 +74,10 @@ const LandingPage = () => {
 
             <Places />
             <Download />
-            <Footer />
+            {/* <Footer /> */}
             </>
     );
 };
 
 export default LandingPage;
 
-
-
-{/* <div className="bg-cover bg-fixed bg-center h-screen" style={{ backgroundImage: `url(${LandingPageImage})` }}> */}
-//     //     <div className="flex text-xl justify-between bg-transparent text-white h-10vh max-w-full px-10 py-5 items-center sticky top-0 z-50">
-//     //             <div className="border-2 border-white rounded-3xl px-8 py-1 hover:cursor-pointer">Get App</div> 
-//     //             <div className="text-white">
-//     //                 {navLinks.map((links,index) => (
-//     //                      <a key={index} href={links.RedirectLink} className="text-white px-10 font-semibold">{links.Name}</a>
-//     //                 ))}
-//     //             </div>
-//     //             <div className="flex justify-between items-center">
-//     //                 <span className="text-white mr-6">Login</span>
-//     //                 {/* <button className="border-2 border-yellow-400 rounded-3xl px-4 bg-yellow-400 text-black">Sign up</button> */}
-//     //                 <button className=" border-2 border-yellow-400 rounded-full px-4 bg-yellow-400 text-black ">Sign up</button>
-//     //             </div>
-//     //         </div>
-//     //     </div>

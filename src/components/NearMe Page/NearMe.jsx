@@ -77,7 +77,6 @@ const NearMe = () => {
           </button>
         </form>
       </div>
-
       <div className='flex my-4'>
         <div>
           <FilterData />
